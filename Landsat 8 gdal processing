@@ -6,7 +6,8 @@
 #              * gdal http://www.mapbox.com/tilemill/docs/guides/gdal/
 #              * convert (image-magick)
 #
-# Reference info: http://www.mapbox.com/blog/putting-landsat-8-bands-to-work/
+# Reference info:
+#                 http://www.mapbox.com/blog/putting-landsat-8-bands-to-work/
 #                 http://www.mapbox.com/tilemill/docs/guides/gdal/
 #                 http://www.mapbox.com/blog/processing-landsat-8/
 #                 http://earthexplorer.usgs.gov/
