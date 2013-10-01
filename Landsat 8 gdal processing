@@ -1,9 +1,16 @@
 #! /bin/bash
 
+# Convert Landsat 8 GeoTIFF images into RGB pan-sharpened JPEGs.
+#
+# Requirements:
+#              * gdal http://www.mapbox.com/tilemill/docs/guides/gdal/
+#              * convert (image-magick)
+#
 # Reference info: http://www.mapbox.com/blog/putting-landsat-8-bands-to-work/
 #                 http://www.mapbox.com/tilemill/docs/guides/gdal/
 #                 http://www.mapbox.com/blog/processing-landsat-8/
 #                 http://earthexplorer.usgs.gov/
+
 
 if [[ -z "$1" ]]; then
 	echo "Landsat image processing"
