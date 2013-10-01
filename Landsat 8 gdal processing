@@ -10,8 +10,8 @@ if [[ -z "$1" ]]; then
 fi
 
 if [ ! -f ./"$1"_B2.TIF ]; then
-    echo "File not found!"
-    exit 0
+	echo "File not found!"
+	exit 0
 fi
 
 if [ ! -d "$DIRECTORY" ]; then
@@ -21,7 +21,7 @@ fi
 # Convert 16-bit images into 8-bit and tweak levels
 for BAND in {8,4,3,2}; do
 	gdalwarp -t_srs EPSG:3857 "$1"_B"$BAND".TIF ./tmp/b"$BAND"-projected.tif;
-  gdal_contrast_stretch -ndv 0 -linear-stretch 70 30 ./tmp/b"$BAND"-projected.tif ./tmp/b"$BAND"-8bit.tif;
+	gdal_contrast_stretch -ndv 0 -linear-stretch 70 30 ./tmp/b"$BAND"-projected.tif ./tmp/b"$BAND"-8bit.tif;
 done
 
 # Merge RGB bands into one image
