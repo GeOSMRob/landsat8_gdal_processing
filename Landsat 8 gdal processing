@@ -1,5 +1,10 @@
 #! /bin/bash
 
+# Reference info: http://www.mapbox.com/blog/putting-landsat-8-bands-to-work/
+#                 http://www.mapbox.com/tilemill/docs/guides/gdal/
+#                 http://www.mapbox.com/blog/processing-landsat-8/
+#                 http://earthexplorer.usgs.gov/
+
 if [[ -z "$1" ]]; then
 	echo "Landsat image processing"
 	echo ""
